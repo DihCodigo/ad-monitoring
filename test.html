@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Teste de Slot</title>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  
+  <!-- (Opcional) Prebid.js aqui, se usar -->
+  <style>
+    #div-gpt-ad { width: 300px; height: 250px; background: #f0f0f0; margin: 20px auto; }
+  </style>
+</head>
+<body>
+  <h1>Teste de Slot do GPT</h1>
+
+  <!-- Slot de anúncio -->
+  <div id="div-gpt-ad"></div>
+
+  <!-- Tag de anúncio adUnit R7 -->
+   <div id="header" style="min-width: 300px; min-height: 50px">
+        <script>
+            var sz = [[320, 50]];
+            if (window.innerWidth > 980) {
+                sz = [[970, 250]];
+            }
+            if (window.innerWidth > 768 && window.innerWidth < 980) {
+                sz = [[728, 90]];
+            }
+            googletag.cmd.push(function () {
+                window.googletag = window.googletag || { cmd: [] };
+                googletag.cmd.push(function () {
+                    googletag
+                        .defineSlot(
+                            "/7542/parceiros/amomeupet",
+                            sz,
+                            "header"
+                        )
+                        .addService(googletag.pubads())
+                        .setTargeting("pos", "first Position");
+                    googletag.pubads().enableSingleRequest();
+                    googletag.pubads().setCentering(true);
+                    googletag.enableServices();
+                });
+                googletag.display("header");
+            });
+
+        </script>
+    </div>
+
+  <!-- Configuração e exibição do GPT -->
+  <script>
+    window.googletag = window.googletag || { cmd: [] };
+
+    googletag.cmd.push(function () {
+      googletag.defineSlot('/123456789/exemplo', [300, 250], 'div-gpt-ad').addService(googletag.pubads());
+      googletag.enableServices();
+      googletag.display('div-gpt-ad');
+    });
+  </script>
+
+  <!-- Seu script com rastreamento -->
+  <script src="./public/script-monitoramento.js"></script>
+</body>
+</html>

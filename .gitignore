@@ -1,0 +1,19 @@
+# Node modules (pacotes instalados)
+node_modules/
+
+# Arquivos de log
+*.log
+
+# Ambiente local e variáveis de ambiente
+.env
+
+# Pasta de build/output (se tiver)
+dist/
+build/
+
+# Arquivos do sistema (Windows, macOS)
+.DS_Store
+Thumbs.db
+
+# Editor (ex: VSCode)
+.vscode/
